@@ -1,13 +1,13 @@
 import './assets/main.css'
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'vue-multiselect/dist/vue-multiselect.esm.css'
+import 'bootstrap'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-
 
 import App from './App.vue'
 import router from './router'
