@@ -1,6 +1,7 @@
 <script setup>
 import { reactive, onMounted, getCurrentInstance, ref } from 'vue'
 import { Form, Field, ErrorMessage } from 'vee-validate'
+import { useRouter } from 'vue-router'
 import * as yup from 'yup'
 
 import MyModal from './MyModal.vue'
@@ -8,6 +9,7 @@ import MyModal from './MyModal.vue'
 const isModalOpened = ref(false)
 const agents = ref([])
 const instance = getCurrentInstance()
+const router = useRouter()
 
 const openModal = () => {
   isModalOpened.value = true
@@ -63,6 +65,10 @@ function handleFileUpload(e) {
   data.avatar = e.target.files[0]
 }
 
+function redirectToItemDescription(id) {
+  router.push({ name: 'item-description', params: { id } })
+}
+
 onMounted(async () => {
   instance.appContext.app
     .axios({
@@ -108,7 +114,12 @@ onMounted(async () => {
       </div>
 
       <div class="row">
-        <div class="col-sm-3 mb-3 mb-sm-0" v-for="item in agents" :key="item.id">
+        <div
+          class="col-sm-3 mb-3 mb-sm-0"
+          v-for="item in agents"
+          :key="item.id"
+          @click="redirectToItemDescription(item.id)"
+        >
           <div class="card mb-4">
             <img :src="item.image" class="card-img-top" alt="..." />
             <div class="card-body">
