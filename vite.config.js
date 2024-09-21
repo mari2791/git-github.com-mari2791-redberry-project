@@ -7,7 +7,7 @@
 
 // // https://vitejs.dev/config/
 // export default defineConfig({
-//   base: '/redberry-project-1/',
+//   base: '/redberry-project/',
 //   plugins: [vue(), vueJsx(), vueDevTools()],
 //   resolve: {
 //     alias: {

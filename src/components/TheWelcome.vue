@@ -90,11 +90,73 @@ onMounted(async () => {
   <content>
     <div class="container-fluid">
       <div class="row mb-3">
-        <div class="col-8">1</div>
+        <div class="col-8">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle me-4"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              რეგიონი
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+
+            <button
+              class="btn btn-secondary dropdown-toggle me-4"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              საფასო კატეგორია
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+
+            <button
+              class="btn btn-secondary dropdown-toggle me-4"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ფართობი
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+
+            <button
+              class="btn btn-secondary dropdown-toggle me-4"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              საძინებლების რაოდენობა
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="col-4">
           <div class="row justify-content-end">
             <div class="col-auto">
-              <a href="/create-new-item">
+              <a href="/redberry-project/create-new-item">
                 <button type="button" class="btn btn-danger btn-custom" style="margin-right: 10px">
                   ლისტინგის დამატება
                 </button>

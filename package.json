@@ -1,4 +1,3 @@
-
 {
   "name": "redberry-project",
   "version": "0.0.0",
@@ -7,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
@@ -37,12 +37,4 @@
     "vite": "^5.3.1",
     "vite-plugin-vue-devtools": "^7.3.1"
   }
-
-
- {
-  "deploy": "gh-pages -d dist"
 }
-
-}
-
-
