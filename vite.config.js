@@ -7,7 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/redberry-project/',
+  base: '/redberry-project-1/',
   plugins: [vue(), vueJsx(), vueDevTools()],
   resolve: {
     alias: {
