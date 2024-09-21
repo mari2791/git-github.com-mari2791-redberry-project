@@ -156,7 +156,7 @@ onMounted(async () => {
         <div class="col-4">
           <div class="row justify-content-end">
             <div class="col-auto">
-              <a href="/redberry-project/create-new-item">
+              <a href="create-new-item">
                 <button type="button" class="btn btn-danger btn-custom" style="margin-right: 10px">
                   ლისტინგის დამატება
                 </button>
