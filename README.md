@@ -1,6 +1,7 @@
-#  Redberry-Project
+# Redberry-Project
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my project for Redberry.
+Add listing function works locally, but is not working on the deployment.
 
 ## Recommended IDE Setup
 
